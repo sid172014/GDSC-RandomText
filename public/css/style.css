@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.headingPart{
+    height: 100vh;
+    background-color: rgb(249, 204, 202);
+}
+.container{
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+.row div:nth-child(1){
+    box-shadow: 10px 10px 10px;
+    
+   
+    text-align: center;
+}
+
+.row div:nth-child(1) h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Sarabun";
+    font-weight: bold;
+    font-size: 4.5em;
+}
+.row div:nth-child(1){
+    background-color: rgb(110, 133, 183);
+    padding: 20px;
+    padding-left: 30px;
+}
+#input{
+    height: 42vh;
+    width: 100%;
+    background-color: rgb(110, 133, 183);
+    font-size:1.5em;
+    margin-top: 2em;
+    font-weight: bold;
+    font-family: "Sarabun";
+    color: white;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#get{
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 3px #6E85B7;
+    border-radius: 60px;
+    outline: none;
+}
+#get:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+}
+.row div:nth-child(2){
+    padding-left: 10%;
+    padding-top: 5%;
+    text-align: center;
+    transform: translateX(150%);
+    animation: animate2 2s ease forwards;
+}
+@keyframes animate2 {
+    100%{
+        transform: translateX(0%);
+    }
+}
+.row div:nth-child(2) h1{
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: "Sarabun";
+}
+#picture{
+    margin-top: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.row div:nth-child(2) p{
+    margin-top: 10%;
+    color: white;
+    word-wrap: break-word;
+    text-align: justify;
+    margin-bottom: 10%;
+    font-family: "Sarabun";
+}
+.row div:nth-child(2) a{
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.2em;
+    outline: none;
+    border: solid 3px #6E85B7;
+    padding: 15px;
+    border-radius: 60px;
+    background-color: white;
+
+}
+
+.row div:nth-child(2) a:hover{
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;   
+}
+@font-face {
+    font-family: "Sarabun";
+    src: url(../fonts/Sarabun-Bold.ttf);
+}

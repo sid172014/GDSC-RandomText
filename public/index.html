@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="headingPart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Random Text Generator</h1>
+                    <textarea type="text" id="input" style="text-align: center;">Click Generate!!</textarea>
+                    <button id="get">GENERATE</button>
+                </div>
+                <div class="col-lg-6">
+                    <h1>About Me</h1>
+                    <img id="picture" src="images/pp.jpeg">
+                    <p>Hi, I'm Sidharth (Sid) , I'm very enthusiastic about web development and programming in general. I've scuttled quite a good amount of experience building several web-projects and working with other renowned web developers as well.</p>
+                    <a href="tel:6201483923">CONTACT ME</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    
+    
+    
+    <script>
+        const getBtn = document.getElementById('get');
+        const postBtn = document.getElementById('post');
+        const input = document.getElementById('input');
+
+        const baseUrl = 'http://localhost:8383/info';
+
+        getBtn.addEventListener('click',getInfo);
+        async function getInfo(e) {
+            e.preventDefault()
+            const res = await fetch(baseUrl, {
+                method : 'GET'
+            })
+
+            console.log(res);
+            const data = await res.json()
+            input.value = data.info;
+        }
+        async function postInfo(){
+
+        }
+    </script>
+</body>
+</html>

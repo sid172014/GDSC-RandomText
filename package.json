@@ -1,0 +1,21 @@
+{
+  "name": "randomText",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20",
+    "random-number": "0.0.9",
+    "request": "^2.88.0",
+    "validator": "^10.8.0"
+  }
+}
