@@ -1,7 +1,7 @@
 # GDSC-RandomText
 
 
-#Instruction -> <b>run the command 'npm install' to install the dependencies and then 'npm start' in terminal or cmd to Initialize/start the project.</b>
+#Instructions -> <b>run the command 'npm install' to install the dependencies and then 'npm start' in terminal or cmd to Initialize/start the project.</b>
 
 
 
