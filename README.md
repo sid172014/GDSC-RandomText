@@ -1,7 +1,7 @@
 # GDSC-RandomText
 
 
-#Instruction ->   <b>Open 'Server.js' file and run the command 'npm start' in terminal or cmd to Initialise/start the project.</b>
+#Instruction ->   <b>Open 'Server.js' file and run the command 'npm start' in terminal or cmd to Initialize/start the project.</b>
 
 
 
