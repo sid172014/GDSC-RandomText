@@ -21,7 +21,7 @@ app.use(express.static('public'));
 app.get('/info', (req,res) => {
     request({url,json:true},(error,response) => {
         const randomIndexer = rn(requirements);
-        res.status(200).json({info: "ID - > " + response.body[randomIndexer].id+"\n"+response.body[randomIndexer].body});
+        res.status(200).json({info: "ID - > " + response.body[randomIndexer].id+"\n"+"Title -> " + response.body[randomIndexer].title+"\n"+"Body -> "+ response.body[randomIndexer].body});
     });
 })
 

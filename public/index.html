@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Random Text Generator</h1>
-                    <textarea type="text" id="input" style="text-align: center;">Click Generate!!</textarea>
+                    <textarea type="text" id="input" readonly="readonly" unselectable="on">Click Generate!!</textarea>
                     <button id="get">GENERATE</button>
                 </div>
                 <div class="col-lg-6">
@@ -43,7 +43,7 @@
         const input = document.getElementById('input');
 
         const baseUrl = 'http://localhost:8383/info';
-
+        input.style.textAlign = "center";
         getBtn.addEventListener('click',getInfo);
         async function getInfo(e) {
             e.preventDefault()
@@ -53,6 +53,7 @@
 
             console.log(res);
             const data = await res.json()
+            input.style.textAlign = "left";
             input.value = data.info;
         }
         async function postInfo(){
