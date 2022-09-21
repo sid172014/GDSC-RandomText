@@ -1,6 +1,6 @@
 # GDSC-RandomText
 
-# Instructions -> <b>run the commands mentioned below to install the dependencies and Initialize/start the project.</b>
+## Instructions -> <b>run the commands mentioned below to install the dependencies and Initialize/start the project.</b>
  ### '$npm install'
  ### '$npm start'
 <img width="1440" alt="Screenshot 2022-09-18 at 4 55 31 PM" src="https://user-images.githubusercontent.com/68033955/190899858-ac750198-19ee-4908-8619-7653274cecb8.png">
